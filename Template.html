@@ -1,0 +1,326 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>CSS Template.. Startup-blog-people portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Template.css">
+    <script src="https://kit.fontawesome.com/07ea8a7e37.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="nav">
+      <div class="nav-left">
+        <a href="#logo" style="padding-right: 25px">logo</a>
+      </div>
+      <div class="nav-right">
+          <a href="#about">about</a>
+          <a href="#team"><i class="fa-solid fa-user"></i> team</a>
+          <a href="#work"><i class="fa-solid fa-briefcase"></i> work</a>
+          <a href="#pricing"><i class="fa-solid fa-dollar-sign"></i> Pricing</a>
+          <a href="#contact" ><i class="fa-solid fa-envelope"></i> contact</a>
+      </div>
+      <div class="hamburger">
+      <a href="#f" onclick="openbar()"><i class="fa-solid fa-bars"></i></a>
+      </div>
+    </div>
+    <div class="sidebar">
+      <a href="#f" onclick="closebar()" style="padding-bottom: 20px; padding-top: 20px">Close &times;</a>
+    </div>
+    <script>
+      var nav_right = document.getElementsByClassName("nav-right")[0].innerHTML;
+        var side = document.getElementsByClassName("sidebar")[0];
+        side.innerHTML += nav_right;
+      function openbar(){
+        side.style.display = "inline-block";
+      }
+      function closebar() {
+        side.style.display = "none";
+      }
+    </script>
+    
+    <div class="logo" id="logo">
+      <div class="logo-div">
+        <p>Start something that matters</p>
+        <p>Stop wasting valuable time with projects that just isn't you.</p>
+        <a href="#f">Learn more and start today</a>
+        <p class="icon">
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-snapchat"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        </p>
+      </div>
+    </div>
+    
+    <div class="about" id="about">
+      <div class="about-head">
+        <p style="font-size: 25px">ABOUT THE COMPANY</p>
+        <p>Key features of our company</p>
+      </div>
+      <div class="about-content">
+        <div>
+          <i class="fa-solid fa-desktop"></i>
+          <p>Responsive</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-heart"></i>
+          <p>Passion</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-cubes"></i>
+          <p>Design</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-gear"></i>
+          <p>Support</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ab">
+      <div class="ab-content">
+        <h2>We know design.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p> <br>
+        <a href="#work"><i class="fa-solid fa-cubes"></i> View Our Works</a>
+      </div>
+      <div>
+        <img src="phone_buildings.jpg">
+      </div>
+    </div>
+    
+    <div class="team" id="team">
+      <div class="team-in">
+        <h2>THE TEAM</h2>
+        <p>The ones who runs this company</p>
+      </div>
+        
+     <div class="team-content">
+      <div>
+        <img src="team2.jpg">
+        <h2>John Doe</h2>
+        <p>CEO & Founder</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <a href="#f" ><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+          
+      <div>
+        <img src="team1.jpg">
+        <h2>Anja Doe</h2>
+        <p>Art Director</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <a href="#f" ><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+        
+      <div>
+        <img src="team3.jpg">
+        <h2>Mike Rose</h2>
+        <p>Web Designer</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <a href="#f" ><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+        
+      <div>
+        <img src="team4.jpg">
+        <h2>Dan Star</h2>
+        <p>Designer</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <a href="#f" ><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+     </div>
+    </div>
+    
+    <div class="team-out">
+      <div>
+          <p>14<sup>+</sup></p>
+        <p>Partners</p>
+      </div>
+      <div>
+          <p>55<sup>+</sup></p>
+        <p>Projects Done</p>
+      </div>
+      <div>
+          <p>89<sup>+</sup></p>
+        <p>Happy Clients
+      </div>
+      <div>
+          <p>150<sup>+</sup></p>
+        <p>Meetings</p>
+      </div>
+    </div>
+    
+    <div class="work" id="work">
+      <div class="work-in">
+        <p>OUR WORK</p>
+        <p>What we've done for people</p>
+      </div>
+        
+      <div class="work-content">
+      <div>
+        <img src="tech_camera.jpg" alt="A Camera" class="myImg" onclick="imgValue(0)">
+      </div>
+      <div>
+        <img src="tech_drone.jpg" alt="A Drone" class="myImg" onclick="imgValue(1)">
+      </div>
+      <div>
+        <img src="tech_mic.jpg" alt="A Microphone" class="myImg" onclick="imgValue(2)">
+      </div>
+      <div>
+        <img src="tech_phone.jpg" alt="A Phone" class="myImg" onclick="imgValue(3)">
+      </div>
+      <div>
+        <img src="tech_sound.jpg" alt="Soundbox" class="myImg" onclick="imgValue(4)">
+      </div>
+      <div>
+        <img src="tech_tablet.jpg" alt="A Tablet" class="myImg" onclick="imgValue(5)">
+      </div>
+      <div>
+        <img src="tech_tableturner.jpg" alt="A Tableturner" class="myImg" onclick="imgValue(6)">
+      </div>
+      <div>
+        <img src="tech_typewriter.jpg" alt="A Typewriter" class="myImg" onclick="imgValue(7)">
+      </div>
+      </div>
+        
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="cap"></div>
+      </div>
+        
+      <script>
+      function imgValue(i) {  
+        var modal =   document.getElementById('myModal');
+        var img =   document.getElementsByClassName('myImg')[i];
+        var modalImg =   document.getElementById("img01");
+        var captionText =   document.getElementById("cap");
+        {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt;
+        }
+        // Get the <span> element that closes the modal
+        var span =   document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+      }
+      </script>
+        
+    </div>
+    
+    <div class="work-out">
+      <div class="work-out1">
+        <p style="font-size: 25px;">Our Skills</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="work-out2">
+        <div>
+          <p><i class="fa-solid fa-camera"></i> Photography</p>
+          <div class="bar">
+          <p style="width: 90%">90%</p>
+          </div>
+        </div>
+        <div>
+          <p><i class="fa-solid fa-desktop"></i> Web Design</p>
+          <div class="bar">
+          <p style="width: 85%">85%</p>
+          </div>
+        </div>
+        <div>
+          <p><i class="fa-regular fa-image"></i> Photoshop</p>
+          <div class="bar">
+          <p style="width: 75%">75%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pricing" id="pricing">
+        
+      <div class="pricing-in">
+        <h2>PRICING</h2>
+        <p>Choose a pricing plan that fits your needs.</p>
+      </div>
+    
+      <div class="pricing-content">
+        <div>
+          <h2>Basic</h2> 
+          <p><b>10GB</b> Storage</p> 
+          <p><b>10</b> Emails</p> 
+          <p><b>10</b> Domains</p> 
+          <p><b>Endless</b> Support</p> 
+          <p class="dollar">$ 10</p>
+          <p>per month</p> 
+          <p><a href="#f">Sign Up</a></p>
+        </div>
+        <div class="middle">
+          <h2>Pro</h2> 
+          <p><b>25GB</b> Storage</p> 
+          <p><b>25</b> Emails</p> 
+          <p><b>25</b> Domains</p> 
+          <p><b>Endless</b> Support</p> 
+          <p class="dollar">$ 25</p>
+          <p>per month</p> 
+          <p><a href="#f">Sign Up</a></p>
+        </div>
+        <div>
+          <h2>Premium</h2> 
+          <p><b>50GB</b> Storage</p> 
+          <p><b>50</b> Emails</p> 
+          <p><b>50</b> Domains</p> 
+          <p><b>Endless</b> Support</p> 
+          <p class="dollar">$ 50</p>
+          <p>per month</p> 
+          <p><a href="#f">Sign Up</a></p>
+        </div>
+      </div>
+        
+    </div>
+    
+    <div class="contact" id="contact">
+      <div class="contact-in">
+        <h2>CONTACT</h2>
+        <p>Lets get in touch. Send us a message:</p>
+      </div>
+      <div class="address">
+          <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chicago, US</p>
+        <p><i class="fa-solid fa-phone"></i> Phone: +00 151515</p>
+        <p><i class="fa-solid fa-envelope"></i> Email: mail@mail.com</p>
+      </div>
+      <div class="contact-content">
+        <form>
+        <input type="text" placeholder="Name" name="Name" required>
+        <input type="email" placeholder="Email" name="Email" required>
+        <input type="text" placeholder="Subject" name="Subject" required>
+        <input type="text" placeholder="Message" name="Message" required>
+        <button><i class="fa-brands fa-telegram" style="font-size: 20px;"></i> SEND MESSAGE</button>
+        </form>
+      </div>
+      <div>
+        <img src="map.jpg">
+      </div>
+    </div>
+    
+    <div class="footer">
+      <a href="#logo"><i class="fa-solid fa-arrow-up"></i> &nbsp; To the top</a>
+      <p>
+      <i class="fa-brands fa-facebook-square"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-snapchat"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+      </p>
+      <p>Powered by <i>pk</i></p>
+    </div>
+
+</body>
+</html>
